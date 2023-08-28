@@ -24,7 +24,7 @@
             <div class="header-text">
             <h5 >Software Engineer</h5>
             <h1>Hi,I'm <span>MAHI </span> MALVIYA<br> from INDIA</h1>
-            <img src="images/photo2.webp" width="500%" height="100%" class="logo">
+            <img src=".vscode\images/photo2.webp" width="500%" height="100%" class="logo">
         </div>
         
       </div>
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/again.jpg">
+                    <img src=".vscode\images/again.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -44,11 +44,32 @@
                         named P R pate patil college of ENgineering and mgmt,amt. 
                     </p>
                     <div class="tab-title">
-                        <p class="tab-title">Skills</p>
-                        <p class="tab-title">Experience</p> 
-                        <p class="tab-title">Education</p>
+                        <p class="tab-title active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-title"onclick="opentab('experience')">Experience</p> 
+                        <p class="tab-title"onclick="opentab('education')">Education</p>
 
                         
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>UI/UX</span>Designing Web/App interface</li>
+                            <li><span>Web Development</span>Web app developmaent</li>
+                            <li><span>App Development</span>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span>Designing Web/App interface</li>
+                            <li><span>Web Development</span>Web app developmaent</li>
+                            <li><span>App Development</span>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span>Designing Web/App interface</li>
+                            <li><span>Web Development</span>Web app developmaent</li>
+                            <li><span>App Development</span>Building Android/iOS apps</li>
+                        </ul>
                     </div>
 
                 </div>
