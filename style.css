@@ -44,7 +44,7 @@ nav ul li a{
     position: relative;
 
 }
-nav ul li a::after{
+.nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
