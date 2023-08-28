@@ -21,14 +21,14 @@ body{background: #080808;
 .container{
     padding: 10px 10%;
 }
-nav{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-nav ul li{
+.nav ul li{
   display: inline-block;
   list-style: cross-fade();
   margin: 10px 65px;
@@ -78,7 +78,6 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
-/*--------about---------*/
 #about{
     padding: 150px;
     color: #ababab;
@@ -100,7 +99,7 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-.subtitle{
+#subtitle{
     font-size: 60px;
     font-weight:600 ;
     color: white;
@@ -108,7 +107,7 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40 px;
+    margin: 20px 0px  40 px;
 }
 .tab-links{
     margin-right: 50px;
@@ -129,7 +128,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 
 }
-tab-title.active-link::after{
+.tab-title .active-link::after{
     width: 50%;
 
 }
