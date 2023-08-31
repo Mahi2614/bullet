@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Personal Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/40f3c7533d.js" crossorigin="anonymous"></script>
     </head>
     <body>  
         <div id="header">
@@ -67,9 +68,9 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>SSC</span>schooling</li>
-                            <li><span>HSC</span>junior college</li>
-                            <li><span>Graduation</span>BE CSE</li>
+                            <li><span>2019</span>schooling</li>
+                            <li><span>2021</span>junior college</li>
+                            <li><span>2025</span>BE CSE</li>
                             
                         </ul>
                     </div>
@@ -78,11 +79,43 @@
             </div>
         </div>
      </div>
-     <script src="script.js">
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tablinks=document.getElementsByClassName("tab-contents");
+     <!----services-->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>This is a description about the services that would be provided to
+                        you all </p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>This is a description about the services that would be provided to
+                        you all </p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>This is a description about the services that would be provided to
+                        you all </p>
+                        <a href="#">learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+     </div>
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname){
-            for(tablinks of tablinks){
+            for(tablink of tablinks){
                 tablink.classlist.remove("active-link");
 
             }
@@ -90,6 +123,9 @@
                 tabcontent.classlist.remove("active-tab");
                 
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
         }
 
      </script>
