@@ -95,21 +95,21 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-   margin: 20px;
+
     border-radius: 15px
 }
 .about-col-2{
     flex-basis: 60%;
 }
-.subtitle{
+.sub-title{
     font-size: 60px;
     font-weight:600 ;
-    color: white;
+    color: #fff;
 
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0  40 px;
+    margin: 20px 0  40px;
 }
 .tab-links{
     margin-right: 50px;
@@ -123,7 +123,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: red;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -8px;
