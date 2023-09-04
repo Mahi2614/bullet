@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -47,7 +48,7 @@ nav ul li a{
 nav ul li a::after{
     content: '';
     width: 0%;
-    height:3px;
+    height: 3px;
     background: red;
     position: absolute;
     left: 0;
@@ -78,193 +79,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
-#about{
-    padding: 150px;
-    color: #ababab;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-.about-col-1{
-   
-    flex-basis: 35%;
-    right: 0;
-}
-.about-col-1 img{
-    width: 100%;
-   margin-top: 20px;
-    border-radius: 15px
-}
-.about-col-2{
-    margin-top: 50px;
-    flex-basis: 60%;
-    left: 0;
-}
-.subtitle{
-    font-size: 60px;
-    font-weight:600 ;
-    color: white;
-
-}
-.tab-title{
-    display: flex;
-    margin: 20px 0  40 px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-
-
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left:0 ;
-    bottom: -8px;
-    transition: 0.2s;
-
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
-.tab-contents.active-tab{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    
-
-}
-.tab-contents.active-tab::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-
-}
-.tab-title .active-link::after{
-    width: 50%;
-
-}
-.tab-contents ul li{
-    list-style:none;
-    margin:10px 0;
-}
-.tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
-
-}
-.tab-contents{
-    display: none;
-}
-tab-contents.active-tab{
-    display: block;
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family:sans-serif;
-    box-sizing: border-box;
-
-
-}
-body{background: #080808;
-    color: white;
-
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url( "C:\Users\hp\OneDrive\Desktop\new\images");
-    background-size: cover;
-    background-position: center;
-   
-}
-.container{
-    padding: 10px 10%;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-nav ul li{
-  display: inline-block;
-  list-style: cross-fade();
-  margin: 10px 65px;
-}
-.logo{
-    width: 1250px;
-    height: 500px;
-}
-nav ul li a{
-    color:white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-
-}
-.nav ul li a::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: #dc971f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-.nav ul li a:hover::after{
-    width: 100%;
-    height:0px;
-
-}
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-
-}
-.header-text{
-    font-size: 60px;
-    margin-top: 20px;
-
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 30px;
-
-}
-.header-text h1 span{
-    color: #ff004f;
-}
+/*-------------------------------about-------------------------------*/
 #about{
     padding: 150px;
     color: #ababab;
@@ -373,17 +188,15 @@ tab-contents.active-tab{
 }
 /*--services--*/
 #services{
-    padding: 30px 0;
+    padding: 50px 0;
 
 }
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-
     grid-gap: 40px;
     margin-top: 50px;
 }
-
 .services-list div{
     background: #756b6b;
     padding: 40px;
@@ -391,9 +204,12 @@ tab-contents.active-tab{
     font-weight: 300;
     border-radius: 10px;
     float: left;
-    transition: background 0.5s,transform 0.5s;
+    transition:  background 0.5s,transform 0.5s;
+   
 
 }
+
+
 .services-list div i{
     font-size: 50px;
     font-weight: 500;
@@ -415,16 +231,15 @@ tab-contents.active-tab{
     background:red;
     transform: translate(-10px);
 }
-}
-/*----portfolio*/
+
+/*-------------------------------------portfolio------------------------------*/
 #port1folio{
-    padding: 50px 0;
+    padding: 70px 0;
 
 }
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -502,7 +317,7 @@ tab-contents.active-tab{
     background: #ff004f;
 
 }
-/*------contact-----*/
+/*----------------------------------------contact-------------------------------*/
 .contact-left{
     flex-basis: 35%;
 }
